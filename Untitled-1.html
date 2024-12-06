@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ffcccb;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            background-color: #ffe4e1;
+            padding: 50px 20px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #d6336c;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background-color: #d6336c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #a82650;
+        }
+        .gallery {
+            padding: 20px;
+            text-align: center;
+            background-color: #ffe4e1;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 5px;
+        }
+        
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday <br>Meiling <div= ""></div>!</h1>
+        <nav>
+            <a href="Untitled-1.html">Home</a>
+            <a href="Untitled-2.html">Gallery</a>
+            <a href="index.html">Wishes</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>🎉 Pray for your special day! 🎉</h2>
+        <p>Join us in wishing My lover mei a very happy birthday!
+            <br>ร่วมสุขสันต์วันเกิดให้กับสุดที่รักของเค้าาา
+        </p>
+        <button onclick="toggleMessage()">คำอวยพร</button>
+        <button onclick="toggleImage()">เป่าเค้ก</button>
+        <p id="message" style="display: none;">สุขสันต์วันเกิดน้าา ซันตั้งใจทำให้เพราะคิดว่าทำอะไรที่ทำได้</p>
+<center><img class="cake" id="toggleImage" src="cake.gif" alt="Example Image" style="display: none; margin-top: 10px;"></center>
+
+<script>
+    function toggleImage() {
+        const image = document.getElementById('toggleImage');
+        if (image.style.display === 'none') {
+            image.style.display = 'block'; // แสดงรูปภาพ
+        } else {
+            image.style.display = 'none'; // ซ่อนรูปภาพ
+        }
+    }
+</script>
+
+       
+<div id="imageContainer"></div>
+
+
+
+<script>
+    function toggleMessage() {
+        const message = document.getElementById('message');
+        if (message.style.display === 'none') {
+            message.style.display = 'block'; // แสดงข้อความ
+        } else {
+            message.style.display = 'none'; // ซ่อนข้อความ
+        }
+    }
+</script>
+<script>
+    function showImage() {
+        const container = document.getElementById('imageContainer');
+        container.innerHTML  = '<img  src="cake.gif" alt="Example Image">';
+    }
+</script>
+    </section>
+
+    <section class="gallery">
+        <h3>Photo Memories</h3>
+        <img src="mei2.jpg" alt="Memory 1">
+        <img src="https://via.placeholder.com/100" alt="Memory 2">
+        <img src="https://via.placeholder.com/100" alt="Memory 3">
+    </section>
+    
+
+    <footer>
+        <p>Only for you Chanthapron Soulyvong </p>
+        <p>&copy;Happy Birthday Website By Sunny</p>
+    </footer>
+    
+</body>
+</html>
